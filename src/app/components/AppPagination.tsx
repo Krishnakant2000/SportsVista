@@ -1,4 +1,4 @@
-import { Box, Typography, Pagination } from "@mui/material";
+import { Box, Pagination, Typography } from "@mui/material";
 import { MetaData } from "../models/pagination";
 
 interface Props {
