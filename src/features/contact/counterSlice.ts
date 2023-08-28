@@ -7,7 +7,8 @@ export interface CounterState{
 
 const initialState: CounterState = {
     data: 42,
-    title: 'YARC (yet another redux counter with redux toolkit)'
+    // title: 'YARC (yet another redux counter with redux toolkit)'
+    title: 'Conatct us for any query'
 }
 
 export const counterSlice = createSlice({
