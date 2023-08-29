@@ -10,7 +10,6 @@ import {
   Typography,
 } from "@mui/material";
 import agent from "../../app/api/agent";
-import { error } from "console";
 import { useState } from "react";
 
 export default function AboutPage() {

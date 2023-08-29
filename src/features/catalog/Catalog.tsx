@@ -1,8 +1,7 @@
 import LoadingComponents from "../../app/layout/LoadingComponents";
 import ProductList from "./ProductList";
-import { useEffect } from "react";
 import { useAppSelector, useAppDispatch } from "../../app/store/configureStore";
-import { productSelectors, fetchProductsAsync, fetchFilters, setPageNumber, setProductParams } from "./catalogSlice";
+import { setPageNumber, setProductParams } from "./catalogSlice";
 import { Grid, Paper } from "@mui/material";
 import AppPagination from "../../app/components/AppPagination";
 import CheckboxButtons from "../../app/components/CheckboxButtons";

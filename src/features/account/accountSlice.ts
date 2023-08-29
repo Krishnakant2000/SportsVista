@@ -62,7 +62,8 @@ export const accountSlice = createSlice({
         setUser: (state, action) => {
             let claims = JSON.parse(atob(action.payload.token.split('.')[1])); 
             let roles = claims['http://schemas.microsoft.com/ws/2008/06/identity/claims/role'];
-            state.user = {...action.payload, roles: typeof(roles) === 'string' ? [roles] : roles};         }
+            state.user = {...action.payload, roles: typeof(roles) === 'string' ? [roles] : roles};         
+        }
     },
     extraReducers: (builder => {
         builder.addCase(fetchCurrentUser.rejected, (state) => {

@@ -1,6 +1,5 @@
 import { Button, ButtonGroup, Typography } from "@mui/material";
 import { useDispatch } from "react-redux";
-import { decrement, increment } from "./counterSlice";
 import { useAppSelector } from "../../app/store/configureStore";
 import { Facebook, Instagram, Twitter } from "@mui/icons-material";
 

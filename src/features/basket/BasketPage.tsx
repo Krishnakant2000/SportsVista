@@ -1,22 +1,11 @@
 import {
-  Box,
   Button,
   Grid,
-  Paper,
-  Table,
-  TableBody,
-  TableCell,
-  TableContainer,
-  TableHead,
-  TableRow,
   Typography,
 } from "@mui/material";
-import { Add, Delete, Remove } from "@mui/icons-material";
-import { LoadingButton } from "@mui/lab";
 import BasketSummary from "./BasketSummary";
 import { Link } from "react-router-dom";
-import { useAppDispatch, useAppSelector } from "../../app/store/configureStore";
-import { addBasketItemAsync, removeBasketItemAsync } from "./basketSlice";
+import { useAppSelector } from "../../app/store/configureStore";
 import BasketTable from "./BasketTable";
 
 export default function BasketPage() {
